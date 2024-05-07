@@ -15,7 +15,6 @@ return new class extends Migration
             $table->id();
             $table->string('nombre', 3);
             $table->text('description');
-            $table->unsignedInteger('nivel_id');
             $table->timestamps();
         });
     }
