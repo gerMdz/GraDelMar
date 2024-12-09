@@ -17,6 +17,11 @@ import Welcome from '@/Components/Welcome.vue';
                     <Welcome />
                 </div>
             </div>
+
+
+
+
+            {{$page.props}}
         </div>
     </AppLayout>
 </template>
