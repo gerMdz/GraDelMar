@@ -1,20 +1,17 @@
-<script setup>
-import ApplicationLogo from '@/Components/ApplicationLogo.vue';
-</script>
+<script setup></script>
 
 <template>
-    <button>Gestión Roles</button>
-
-    <button>Gestión Lecciones</button>
+    <button v-if="$page.props.user.permissions.includes('create roles')">Crear Roles</button>
+    <button v-if="$page.props.user.permissions.includes('create lessons')">Crear nueva lección</button>
 
 </template>
 <style>
-    button {
-        background-color: chocolate;
-        color: white;
-        padding: 10px;
-        margin: 5px;
+button {
+    background-color: chocolate;
+    color: white;
+    padding: 10px;
+    margin: 5px;
 
-    }
+}
 </style>
 
